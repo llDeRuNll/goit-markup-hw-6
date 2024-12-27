@@ -34,23 +34,56 @@
                 </li>
             </ul>
         </address>
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
             <svg class="burger-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-menu"></use>
             </svg>
         </button>
         </div>
+        
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu-container">
+                <button class="mobile-menu-close" data-menu-close><svg width="8" height="8" class="close-btn-icon"><use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use></svg></button>
+                <nav class="mobile-menu-nav">
+                    <ul class="mobile-list-menu">
+                        <li class="mobile-item">
+                            <a class="mobile-link current" href="./index.html">Studio</a>
+                        </li>
+                        <li class="mobile-item"><a class="mobile-link" href="">Portfolio</a></li>
+                        <li class="mobile-item"><a class="mobile-link" href="">Contacts</a></li>
+                    </ul>
+                </nav>
+                <address class="mobile-contacts">
+                    <ul class="mobile-contacts-list">
+                        <li class="mobile-contacts-item">
+                            <a class="mobile-contacts-link current" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="mobile-contacts-item">
+                            <a class="mobile-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </address>
+                <div>
+                    <ul class="social-links-mobile">
+                        <li class="mobile-social"><a class="social-icon-mobile" href="/"><svg class="instagram-icon" width="24" height="24"><use href="./images/icons.svg#icon-instagram"></use></svg></a></li>
+                        <li class="mobile-social"><a class="social-icon-mobile" href="/"><svg class="instagram-icon" width="24" height="24"><use href="./images/icons.svg#icon-twitter"></use></svg></a></li>
+                        <li class="mobile-social"><a class="social-icon-mobile" href="/"><svg class="instagram-icon" width="24" height="24"><use href="./images/icons.svg#icon-facebook"></use></svg></a></li>
+                        <li class="mobile-social"><a class="social-icon-mobile" href="/"><svg class="instagram-icon" width="24" height="24"><use href="./images/icons.svg#icon-linkedin"></use></svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
 <!--Section 1-->
-        <section class="section-order hidden" >
+        <section class="section-order" >
             <div class="container">
         <h1 class="order-name">Effective Solutions for Your Business </h1>
         <button class="order-button" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
 <!--Section 2-->
-        <section class="section-advantages hidden">
+        <section class="section-advantages">
             <div class="container">
             <h2 class="visually-hidden">Advantages</h2>
             <ul class="advantages-list">
@@ -300,5 +333,6 @@
         </div>
       </div>
       <script src="./modal.js"></script>
+      <script src="./menu.js"></script>
 </body>
 </html>
