@@ -376,7 +376,6 @@ color: #2E2F42;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-  text-align: center;
 }
 .icon-advantages{
   display: none;
@@ -441,6 +440,7 @@ color: #2E2F42;
   display: flex;
   justify-content: center;
   gap: 16px;
+  margin-top: 8px;
 }
 .social-icon{
   width: 40px;
@@ -467,12 +467,10 @@ color: #2E2F42;
 .hero-information{
   padding: 32px 0;
 }
-.hero-name{
-  text-align: center;
-  margin-bottom: 8;
-}
+.hero-name,
 .hero-paragraph{
   text-align: center;
+  margin-bottom: 8;
 }
 @media screen and (min-width: 768px) and (max-width: 1158px){
   .team-item{
@@ -495,6 +493,7 @@ color: #2E2F42;
   display: flex;
   flex-wrap: wrap;
   row-gap: 48px;
+  gap: 24px;
 }
 .portfolio-item{
   cursor: pointer;
@@ -507,7 +506,7 @@ color: #2E2F42;
 }
 .advantages.portfolio-h{
   margin-bottom: 8px;
-  text-align: none;
+  
 }
 .portfolio-list li:hover,
 .portfolio-list li:focus{
