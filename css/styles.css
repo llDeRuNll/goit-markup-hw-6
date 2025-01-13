@@ -388,7 +388,7 @@ color: #2E2F42;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-
+  text-align: center;
 }
 .icon-advantages{
   display: none;
@@ -402,6 +402,9 @@ color: #2E2F42;
   .advantages-item{
     width: calc((100% - 24px) / 2 );
     
+  }
+  .advantages{
+    text-align: left;
   }
 }
 @media screen and (min-width: 1158px){
