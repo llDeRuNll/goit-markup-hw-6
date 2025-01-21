@@ -44,7 +44,6 @@ button{
 /*common*/
 .container{
     max-width: 320px;
-    padding: 0 16px;
     margin: 0 auto;
 }
 @media screen and (min-width: 768px){
@@ -55,7 +54,6 @@ button{
 @media screen and (min-width: 1158px){
     .container{
         max-width: 1158px;
-        padding: 0 15px;
     }
 }
 
@@ -301,6 +299,7 @@ color: #2E2F42;
   background-position: center;
   background-size: cover;
   margin:0 auto;
+  max-width: 1440px;
 }
 @media screen and (max-width: 767px) and (min-resolution: 192dpi){
   .section-order{
@@ -388,7 +387,7 @@ color: #2E2F42;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-
+  text-align: center;
 }
 .icon-advantages{
   display: none;
@@ -402,6 +401,9 @@ color: #2E2F42;
   .advantages-item{
     width: calc((100% - 24px) / 2 );
     
+  }
+  .advantages{
+    text-align: left;
   }
 }
 @media screen and (min-width: 1158px){
@@ -442,15 +444,13 @@ color: #2E2F42;
   background-color: #FFFFFF;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  width: 100%;
-  margin-bottom: 72px;
+  width: 264px;
 }
 .team-list{
-  gap:24px;
-  padding-left: 24px;
-  padding-right: 24px;
+  gap: 72px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .social-link{
   display: flex;
@@ -497,6 +497,8 @@ color: #2E2F42;
   }
   .team-list{
     justify-content: center;
+    gap: 24px;
+    row-gap: 64px;
   }
 }
 @media screen and (min-width: 1158px){
@@ -522,8 +524,7 @@ color: var(--slate);
 .portfolio-list{
   display: flex;
   flex-wrap: wrap;
-  row-gap: 48px;
-  gap: 24px;
+  gap: 48px;
   width: 100%;
 }
 .portfolio-item{
@@ -574,10 +575,12 @@ transform: translateY(0);
       row-gap: 72px;
       
     }
-    .portfolio-item{
-      width: calc((100% - 24px) / 2 );
-      
-    }  
+}
+@media screen and (min-width: 1158px){
+  .portfolio-list{
+    row-gap: 48px;
+    column-gap: 24px;
+  }
 }
 .page-footer{
   background-color: #2e2f42;
@@ -585,10 +588,10 @@ transform: translateY(0);
 }
 .footer-container{
   flex-wrap: wrap;
-  gap: 24px;
 }
 .info-footer{
   text-align: center;
+  margin-bottom: 72px;
 }
 .footer-logo .logo-part{
   color: #f4f4fd;
@@ -599,7 +602,6 @@ transform: translateY(0);
   letter-spacing: 0.02em;
   max-width: 264px;
   text-align: left;
-  margin-bottom: 72px;
 }
 .footer-logo{
   display: inline-block;
@@ -699,10 +701,13 @@ transform: translateY(0);
 @media screen and (min-width: 768px) and (max-width: 1158px) {
   .info-footer{
     text-align: left;
+    margin-bottom: 0;
   }
   .footer-container{
     display: flex;
     width: 584px;
+    row-gap: 72px;
+    gap: 24px;
   } 
   .social-paragraph{
     text-align: left;
@@ -720,25 +725,40 @@ transform: translateY(0);
   .parag-form{
     text-align: left;
   }
+  .footer-text{
+    margin-bottom: 0;
+  }
+  .social-information-foot{
+    margin-bottom: 0;
+    
+  }
 }
 @media screen and (min-width: 1158px){
+  .info-footer{
+    text-align: left;
+    margin-right: 120px;
+  }
   .footer-container{
     display: flex;
   } 
    .foot-form{
     display: flex;
     gap: 24px;
-    padding-left: 80px;
 }
 .parag-form{
   padding: 0 0 0 0;
-  padding-left: 80px;
 } 
 .subscribe-foot{
   max-width: 264px;
 }
 .parag-form{
   text-align: left;
+}
+.social-paragraph{
+  text-align: left;
+}
+.social-information-foot{
+  margin-right: 80px;
 }
 }
 .backdrop {
